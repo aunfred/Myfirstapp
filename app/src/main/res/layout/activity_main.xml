@@ -20,23 +20,39 @@
         android:textColor="@android:color/holo_orange_dark"
         android:id="@+id/txttitledetail" />
 
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bntBack"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentLeft="false" />
-
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="0dp"
         tools:layout_below="@+id/txttitledetail"
-        tools:layout_above="@+id/bntBack"
+        tools:layout_above="@+id/laybotton"
         android:id="@+id/livTraffic"
         />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/laybotton"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bntBack"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/aboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAboutMe"
+            android:layout_weight="1" />
+    </LinearLayout>
 
 
 </RelativeLayout>
